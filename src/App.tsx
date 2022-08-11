@@ -22,7 +22,7 @@ function App() {
     .then((response:AxiosResponse<String, String>)=>{
       console.log((response.data))
       setIsLoggedInSuccess(response.data);
-      setIsLoggedInFailed(response.data);
+      setIsLoggedInFailed(!response.data);
       // if (response.data )
       // console.log("yoooooooo")
       // else
@@ -36,7 +36,8 @@ function App() {
         console.log("yoooooooo")
         ReactDOM.render(element,document.getElementById('AppHeader')) 
     }
-    {  isLoggedInFailed &&
+    {  
+      isLoggedInFailed &&
        console.log("invalid username or password")
       
     }
