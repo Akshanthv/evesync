@@ -24,8 +24,8 @@
   color: white;
 }
 
-App-body {
-  background-color: blanchedalmond;
+.App-body {
+  background-color: rgb(255, 242, 222);
   min-height: 83vh;
   display: flex;
   flex-direction: row;
