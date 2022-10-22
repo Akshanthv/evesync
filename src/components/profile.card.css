@@ -1,0 +1,27 @@
+.profilecard{
+    box-shadow: 0 4px 0px 0 rgba(97, 97, 97, 0.2);
+    border-top: 0 4px 8px 0 black;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 0 1px 0;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+}
+
+.name{
+    font-size: medium;
+    color: black;
+    display: flex;
+    margin: auto;
+}
+
+.profile-card-img{
+    display: flex;
+    border-radius: 90%;
+    border: #000;
+}
+.bottom{
+    margin-top: 20px;
+    display: flex;
+}

@@ -1,21 +1,42 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
-import Feed from './screens/feed/feed.screen';
 import Login from './screens/login/login.screen';
 import Profile from './screens/profile/profile.screen';
 import Event from './screens/events/event.screen'
+import AppTopBar from './components/header.component';
+import Chat from './chat/chat.screen';
+import Logon from './screens/login/logon.screen';
 
 
 function App() {
 
+  const navigator = useNavigate()
+  const navigateToProfile = () => {
+    navigator("/profile")
+  }
+  const navigateTochat = () => {
+    navigator("/chat")
+  }
+  const navigateToEvent = () => {
+    navigator("/event")
+  }
+  const navigateToLogon = () => {
+    navigator("/logon")
+  }
+
   return (
     <div id="App" className="App">
+      <AppTopBar title="EveSync"
+      onChatClick={navigateTochat}
+      onEventClick={navigateToEvent}
+      onProfileClick={navigateToProfile} />
       <Routes>
+        <Route path='/logon' element={<Logon />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/feed' element={<Feed />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/event' element={<Event />} />
+        <Route path='/chat' element={<Chat />} />
         <Route path='/' element={<Login />} />
       </Routes>
     </div>

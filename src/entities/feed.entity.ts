@@ -1,4 +1,7 @@
 export interface IFeed {
-    title: string;
-    description: string;
+    location: any
+    id:number
+    imgURL:any
+    title: string
+    description: string
 }

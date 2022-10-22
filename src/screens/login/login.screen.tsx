@@ -1,8 +1,10 @@
 import axios, { AxiosResponse } from 'axios';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Feed from '../feed/feed.screen';
 import Event from '../events/event.screen';
+
+import Logon from './logon.screen';
+
 
 const Login = () => {
 
@@ -21,12 +23,10 @@ const Login = () => {
                 console.log((response.data))
                 setIsLoggedInSuccess(response.data);
                 setIsLoggedInFailed(response.data);
-                if(response.data){
-                    navigate('/feed');
+                if (response.data) {
+                    navigate('/event');
                 }
             })
-
-
     }
 
     const updateUsername = (e: any) => {
@@ -35,6 +35,10 @@ const Login = () => {
 
     const updatePassword = (e: any) => {
         setPassword(e.target.value);
+    }
+
+    const goToLogon = () => {
+            <Logon />
     }
 
     return (
@@ -53,7 +57,7 @@ const Login = () => {
                             <input onChange={updatePassword} id='password' name='password' type='password' placeholder='Enter Password' />
                         </div>
                         <button id='loginButton' onClick={login}>Login</button>
-                        <button id='createAccount' onClick={() => { }}>Create Account</button>
+                        <button id='createAccount' onClick={goToLogon}>Create Account</button>
                         {
                             isLoggedInFailed &&
                             <h1>Login Failed</h1>
