@@ -5,7 +5,7 @@ const ChatList = () => {
     return (
         <div>
             <div>
-                <button type="button" >userName</button>
+                <button type="button" >User Name</button>
             </div>
         </div>
     )
