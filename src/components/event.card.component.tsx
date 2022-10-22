@@ -21,10 +21,10 @@ export interface IEventCardProps {
 
 const EventCard = ({id,title,type,img,location,description}: IEventCardProps) => {
 
-    axios.get("http://localhost:8080/evesync/api/v1/events")
-    .then((response: AxiosResponse<IEvent[]>)=>{
-    console.log((response.data))
-    })  
+    // axios.get("http://localhost:8080/evesync/api/v1/events")
+    // .then((response: AxiosResponse<IEvent[]>)=>{
+    // console.log((response.data))
+    // })  
 
     return (
         <div className='eventCard'>
