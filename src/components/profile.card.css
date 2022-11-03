@@ -3,7 +3,7 @@
     border-top: 0 4px 8px 0 black;
     background-color: #fff;
     border-radius: 10px;
-    margin: 0 0 1px 0;
+    margin: 0 500px 100px 10px;
     align-items: baseline;
     display: flex;
     flex-direction: row;
@@ -18,10 +18,11 @@
 
 .profile-card-img{
     display: flex;
-    border-radius: 90%;
+    border-radius: 70%;
+    width: 426px;
+    height: 240px;
     border: #000;
 }
-.bottom{
-    margin-top: 20px;
-    display: flex;
+.description{
+    margin: auto;
 }

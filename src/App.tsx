@@ -7,6 +7,7 @@ import Event from './screens/events/event.screen'
 import AppTopBar from './components/header.component';
 import Chat from './chat/chat.screen';
 import Logon from './screens/login/logon.screen';
+import Settings from './screens/settings/setting.screen';
 
 
 function App() {
@@ -24,19 +25,25 @@ function App() {
   const navigateToLogon = () => {
     navigator("/logon")
   }
+  const navigateToSettings = () => {
+    navigator("/setting")
+  }
 
   return (
     <div id="App" className="App">
       <AppTopBar title="EveSync"
       onChatClick={navigateTochat}
       onEventClick={navigateToEvent}
-      onProfileClick={navigateToProfile} />
+      onProfileClick={navigateToProfile} 
+      onSettingClick={navigateToSettings} />
+
       <Routes>
         <Route path='/logon' element={<Logon />} />
         <Route path='/login' element={<Login />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/event' element={<Event />} />
         <Route path='/chat' element={<Chat />} />
+        <Route path='setting' element={<Settings />} />
         <Route path='/' element={<Login />} />
       </Routes>
     </div>
