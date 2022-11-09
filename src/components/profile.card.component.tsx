@@ -22,7 +22,7 @@ const ProfileCard = ({id,name,img,description}: IProfileCardProps) => {
             </h2>
             <p className='description'>{description}</p>
 
-            <div className='bottom'>
+            <div className='b'>
                 
             </div>
         </div>

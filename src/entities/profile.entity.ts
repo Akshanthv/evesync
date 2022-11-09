@@ -3,5 +3,6 @@ export interface IProfile {
     imgURL: string;
     name: string;
     bio: string;
+    
 
 }

@@ -4,51 +4,6 @@ const UserPostsCard = () => {
     return(
     <React.Fragment>
         <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
-        <span>Post Screen</span><br />
     </React.Fragment>
     )
 }

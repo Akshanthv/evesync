@@ -8,6 +8,7 @@ import UserPostsCard from '../../components/post.card.component';
 import '../profile/profile.screen.css';
 import UserInfo from '../../components/info.card.component';
 import UserTagged from '../../components/tagged.card.component';
+import { PostAdd } from '@mui/icons-material';
 
 
 const Profile = () => {
@@ -23,6 +24,17 @@ const Profile = () => {
             // }
     }
 
+    const onPostsClick = () => {
+        return(
+            <UserPostsCard />
+        )
+    }
+
+    const onTaggedClick = () => {
+        return(
+            <UserTagged />
+        )
+    }
    
 
     return <React.Fragment>
@@ -39,16 +51,24 @@ const Profile = () => {
                 />)
         }
 
-        <div>
-            <button id='posts'  >Posts</button>
-            <button id='tagged' >Tagged</button>
+        <div className='profileBar'>
+            <button id='posts' onClick={()=>onPostsClick()}>Posts</button>
+            <button id='tagged' onClick={()=>onTaggedClick()}>Tagged</button>
             <button id='info' >Info</button>
         </div>
 
-        <div className='profile_tabs'>
+        {/* <div className='profile_tabs'>
             {<UserPostsCard />}
-        </div>
+        </div> */}
     </React.Fragment>
 }
 
 export default Profile;
+
+function onPostsClick(arg0: number): void {
+    ;
+}
+function onTaggedClick(arg0: number): void {
+    throw new Error('Function not implemented.');
+}
+
